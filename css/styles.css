@@ -35,9 +35,9 @@ button {
 }
 
 .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: auto;
 }
 
@@ -244,20 +244,13 @@ button {
 /* -----------------QUALITIES-------------------- */
 
 .qualities {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .qualities-container-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background-color: #f4f4fd;
-  margin-bottom: 8px;
+  display: none;
 }
 
 .qualities-icon {}
@@ -266,18 +259,27 @@ button {
 
 .qualities-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
-.qualities-item {
-  flex-basis: calc((100% - 72px)/4);
-}
+.qualities-item {}
 
 .qualities-subtitle {
   margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
 }
 
-.qualities-text {}
+.qualities-text {
+  font-weight: 500;
+}
 
 /* -----------------QUALITIES-------------------- */
 
@@ -479,7 +481,6 @@ button {
   flex-direction: column;
   justify-content: center;
   margin-left: auto;
-  margin-bottom: 8px;
 }
 
 .fotter-form-text {
@@ -809,4 +810,48 @@ button {
   justify-content: center;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .qualities-item {
+    flex-basis: calc((100% - 72px) /2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+    padding: 0;
+  }
+
+  .qualities {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .qualities-container-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .qualities-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .qualities-item {
+    flex-basis: calc((100% - 72px)/4);
+  }
 }
