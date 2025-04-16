@@ -854,6 +854,42 @@ button {
     gap: 64px 24px;
   }
 
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 72px 24px;
+  }
+
+  .footer-container-logo,
+  .footer-container-soc {
+    width: calc(50% - 12px);
+    justify-content: left;
+  }
+
+  .fotter-logo {
+    justify-content: left;
+  }
+
+  .fotter-form-container {
+    width: 100%;
+    justify-content: left;
+  }
+
+
+  .fotter-form {
+    gap: 24px;
+    width: 100%;
+    justify-content: left;
+  }
+
+
+  .footer-btn {
+    height: 40px;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+  }
+
 }
 
 /* --------------------------DESCkTOP-------------------------- */
@@ -865,7 +901,7 @@ button {
 
   .team .container,
   .footer .container {
-    width: 1158px;
+    max-width: 1158px;
     padding: 0;
   }
 
@@ -921,5 +957,25 @@ button {
   .team-list {
     flex-wrap: nowrap;
     gap: 24px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+  }
+
+
+
+  .footer-container {
+    flex-wrap: nowrap;
+  }
+
+  .footer-soc-text {
+    margin-bottom: 0;
+  }
+
+  .fotter-form-text {
+    margin: 0;
   }
 }
