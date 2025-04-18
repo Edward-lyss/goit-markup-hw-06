@@ -189,8 +189,8 @@ button {
 
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   max-width: 1440px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -203,13 +203,13 @@ button {
 
 .hero-title {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 52px;
+  margin-left: 52px;
   max-width: 496px;
 }
 
@@ -223,7 +223,7 @@ button {
   color: #fff;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 48px;
+  margin-top: 72px;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -270,7 +270,6 @@ button {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
 }
@@ -834,12 +833,32 @@ button {
     max-width: 584px;
   }
 
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-btn {
+    margin-top: 36px;
+  }
+
   .qualities-list {
     gap: 72px 24px;
   }
 
   .qualities-item {
     flex-basis: calc((100% - 72px) / 2);
+  }
+
+  .qualities-subtitle {
+    text-align: left;
   }
 
   .portfolio-list {
@@ -875,13 +894,11 @@ button {
     justify-content: left;
   }
 
-
   .fotter-form {
     gap: 24px;
     width: 100%;
     justify-content: left;
   }
-
 
   .footer-btn {
     height: 40px;
@@ -889,7 +906,6 @@ button {
     gap: 8px;
     padding: 8px 16px;
   }
-
 }
 
 /* --------------------------DESCkTOP-------------------------- */
@@ -932,6 +948,16 @@ button {
     flex-basis: calc((100% - 72px) / 4);
   }
 
+  .qualities-text {
+    font-weight: 400;
+  }
+
+  .section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   .portfolio {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -962,10 +988,7 @@ button {
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
-
   }
-
-
 
   .footer-container {
     flex-wrap: nowrap;
@@ -977,5 +1000,19 @@ button {
 
   .fotter-form-text {
     margin: 0;
+  }
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-title {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-btn {
+    margin-top: 48px;
   }
 }
