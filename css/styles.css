@@ -27,6 +27,8 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -87,8 +89,81 @@ button {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* ------------------------MOB-MENU------------------------ */
+.mob-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  padding: 24px 24px 40px 16px;
+}
+.mob-cls-btn {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  background-color: transparent;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 24px;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 
-/* ----------------HEADER------------------- */
+.mob-menu-link.current {
+  color: #404bbf;
+}
+
+.mob-contacts {
+  margin-top: 168px;
+  margin-bottom: 48px;
+}
+.mob-contacts-list {
+}
+.mob-contacts-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.mob-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+  font-style: normal;
+}
+
+.mob-contacts-link.current {
+  color: #404bbf;
+}
+
+.mob-container-soc {
+}
+.mob-soc-text {
+}
+.mob-soc-list {
+}
+.mob-soc-item {
+}
+.mob-soc-link {
+}
+.mob-soc-icon {
+}
+/* ------------------------MOB-MENU------------------------ */
+/* ------------------------HEADER--------------------------- */
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -111,8 +186,10 @@ button {
 }
 
 .header-logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  /* padding-top: 24px;
+  padding-bottom: 24px; */
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-right: 76px;
 }
 
@@ -120,6 +197,7 @@ button {
   display: flex;
   align-items: center;
   gap: 40px;
+  display: none;
 }
 
 .header-menu-item {
@@ -161,6 +239,7 @@ button {
   display: flex;
   align-items: center;
   gap: 40px;
+  display: none;
 }
 
 .contacts-item {
@@ -183,6 +262,17 @@ button {
 .contacts-link:focus,
 .header-menu-link.current {
   color: #404bbf;
+}
+
+.menu-opn-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-opn-btn-icon {
+  fill: #2f2f37;
 }
 
 /* ----------------HEADER------------------- */
