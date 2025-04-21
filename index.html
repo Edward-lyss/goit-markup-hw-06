@@ -970,7 +970,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button
           type="button"
@@ -1076,10 +1076,13 @@
               class="modal-check visually-hidden"
               value="true"
             />
-            <label
-              for="user-privacy"
-              class="modal-check-text"
-            >
+            <label class="modal-check-text">
+              <input
+                type="checkbox"
+                class="modal-check visually-hidden"
+                name="user-privacy"
+                id="user-privacy"
+              />
               <span class="modal-checkbox">
                 <svg
                   class="modal-check-icon"
